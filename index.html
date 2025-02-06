@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474081DBC/background-xanh-duong-dep_043332450.jpg" >
+    <header>
+        <h1>Website Cá Nhân</h1>
+    </header>
+    
+    <div class="container">
+        <h2>Chào mừng bạn đến với website cá nhân</h2>
+        <p>Đây là nơi bạn có thể tìm thấy thông tin về tôi.</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCLKNt_KPUbJkzA_1DQhun2g">YouTube</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/share/1BbcbiVfn9/" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+
+        <!-- Thêm hình ảnh  -->
+        <img src="https://i.postimg.cc/ZY9G6WrB/NDT08315.jpg" 
+             alt="Ảnh tập thể" class="main-image">
+
+        <!-- Nhúng video YouTube -->
+        <h3>Video yêu thích</h3>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/C62ApusprBA" 
+                frameborder="0" allowfullscreen></iframe>
+
+        <h3>Thông tin liên hệ</h3>
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Tuổi:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">Nghề nghiệp:</label>
+                <input type="text" id="occupation" name="occupation">
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích:</label><br>
+                <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+                <label for="hobby1">Đọc sách</label>
+                <input type="checkbox" id="hobby2" name="hobbies" value="music">
+                <label for="hobby2">Âm nhạc</label>
+                <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+                <label for="hobby3">Thể thao</label>
+            </div>
+
+            <button type="submit">Gửi thông tin</button>
+        </form>
+    </div>
+    
+</body>
+</html>
